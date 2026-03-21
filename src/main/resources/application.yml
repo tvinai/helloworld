@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: helloword
+  datasource:
+    url: jdbc:mysql://localhost:3306/account
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  flyway:
+    enabled: true

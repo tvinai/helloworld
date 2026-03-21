@@ -1,0 +1,7 @@
+CREATE TABLE account (
+    account_ref_id VARCHAR(255) NOT NULL PRIMARY KEY,
+    account_no VARCHAR(255) NOT NULL,
+    account_name VARCHAR(255) NOT NULL,
+    created_datetime DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_datetime DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
