@@ -7,10 +7,10 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class HellowordApplication {
+public class HelloWorldApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HellowordApplication.class, args);
+        SpringApplication.run(HelloWorldApplication.class, args);
     }
 
     @Bean
