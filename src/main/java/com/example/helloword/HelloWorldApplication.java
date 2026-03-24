@@ -9,6 +9,12 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class HelloWorldApplication {
 
+    private AccountService accountService;
+
+    public HelloWorldApplication(AccountService accountService) {
+        this.accountService = accountService;
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(HelloWorldApplication.class, args);
     }
@@ -17,6 +23,7 @@ public class HelloWorldApplication {
     public CommandLineRunner commandLineRunner(ApplicationContext context) {
         return args -> {
             System.out.println("===> Hello World from CommandLineRunner...");
+            accountService.save();
         };
     }
 
