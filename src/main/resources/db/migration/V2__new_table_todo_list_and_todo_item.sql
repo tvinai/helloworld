@@ -1,0 +1,13 @@
+CREATE TABLE todo_list (
+    id VARCHAR(36) NOT NULL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    status VARCHAR(255) NOT NULL,
+    is_active TINYINT NOT NULL DEFAULT 0
+);
+
+CREATE TABLE todo_item (
+    id VARCHAR(36) NOT NULL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    status VARCHAR(255) NOT NULL,
+    is_active TINYINT NOT NULL DEFAULT 0
+);
